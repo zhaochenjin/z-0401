@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格实例</title>
+    <style type="text/css">
+        *{
+            font-family: 方正粗黑宋简体;
+            font-size: 16px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        html,body {
+            width:100%;
+            height:100%;
+
+            background-color:rgb(233,233,233);
+        }
+
+        .container {
+            width:100%;
+            height:100%;
+        }
+
+        .header{
+            width:100%;
+            height: 30px;
+            background-color:#F5F6F7;
+            position: relative;  /*  相对定位 */
+        }
+
+        .header h3{
+            height:30px;
+            line-height: 30px;
+
+            position: relative;
+        }
+
+        .header ul {
+            top:0;
+            right:30px;
+            position: absolute;  /* 绝对定位 */
+
+        }
+
+        .header ul li {
+            height:26px;
+            line-height: 26px;
+            list-style-type: none;
+            /*display: inline-block;*/
+            float:left;
+            padding:2px;
+        }
+
+        .search {
+            width:100%;
+            min-width: 926px;
+            height:40px;
+            background-color:#F5F6F7;
+            margin-top:20px;
+
+            line-height: 40px;
+        }
+
+        select, input {
+            width:200px;
+            height:24px;
+        }
+
+        .btn{
+            width:106px;
+            height:36px;
+
+            background-image: url(../day02/img/btn4.png);
+
+            border:0;
+        }
+
+        .table{
+            width:100%;
+            text-align: center;
+            margin-top:10px;
+
+        }
+
+        .table tr {
+            background-color: white;
+
+        }
+
+        .table th{
+            background-color:#4169E1;
+            color:white;
+        }
+
+        .table tr.odd{
+            background-color: #A9A9A9;
+        }
+
+        .table tr:hover {
+            background-color:#ADFF2F;
+        }
+
+        .table td,.table th{
+            height:35px;
+        }
+
+        .footer{
+            width:100%;
+            height:40px;
+            line-height: 40px;
+
+            background-color: white;
+            margin-top:10px;
+
+            position: relative;
+
+        }
+
+        .footer ul {
+            position: absolute;
+            top:0;
+            right:30px;
+        }
+
+        .footer ul li{
+            height:40px;
+            line-height: 40px;
+            list-style-type: none;
+            /*display: inline-block;*/
+            float:left;
+            padding:2px;
+        }
+
+        .page {
+            text-decoration: none;
+            color:#000000;
+
+            display: inline-block;
+            border:1px solid #A9A9A9;
+            width:30px;
+            height:30px;
+
+            text-align: center;
+            vertical-align: middle;
+
+            background-image: url(../day02/img/btn1.png);
+            background-position: -10px -2px;
+        }
+
+        .pre {
+            background-image: url(../day02/img/icon7.png);
+            background-repeat: no-repeat;
+            background-position: 10px 8px;
+        }
+
+        .next {
+            background-image: url(../day02/img/icon8.png);
+            background-repeat: no-repeat;
+            background-position: 10px 8px;
+        }
+.box{
+    width: 98%;
+    margin: 0 auto;
+}
+    </style>
+</head>
+<body>
+<div class="box">
+<div class="container">
+
+    <div class="header">
+<h3>系统日志</h3>
+    <ul>
+        <li><img src="../day02/img/icon5.png" /></li>
+        <li>首页</li>
+        <li><img src="../day02/img/icon8.png" /></li>
+        <li>日志管理</li>
+        <li><img src="../day02/img/icon8.png" /></li>
+        <li>系统日志</li>
+    </ul>
+</div>
+
+    <div class="search">
+         <label>类型：</label>
+         <select>
+             <option>类型1</option>
+             <option>类型2</option>
+         </select>
+         <span>日期：从</span>
+         <input />
+         <span>至</span>
+         <input />
+         <input type="button" class="btn" value="搜索"/>
+         </div>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>日志操作</th>
+            <th>事件类型</th>
+            <th>发生时间</th>
+            <th>修复时间</th>
+            <th>处理人</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>新增用户操作</td>
+            <td>新增用户操作</td>
+            <td>2019-03-03</td>
+            <td>2019-04-03</td>
+            <td>张三</td>
+        </tr>
+        <tr class="odd">
+            <td>新增用户操作</td>
+            <td>新增用户操作</td>
+            <td>2019-03-03</td>
+            <td>2019-04-03</td>
+            <td>张三</td>
+        </tr>
+        <tr>
+            <td>新增用户操作</td>
+            <td>新增用户操作</td>
+            <td>2019-03-03</td>
+            <td>2019-04-03</td>
+            <td>张三</td>
+        </tr>
+        <tr class="odd">
+            <td>新增用户操作</td>
+            <td>新增用户操作</td>
+            <td>2019-03-03</td>
+            <td>2019-04-03</td>
+            <td>张三</td>
+        </tr>
+        <tr>
+            <td>新增用户操作</td>
+            <td>新增用户操作</td>
+            <td>2019-03-03</td>
+            <td>2019-04-03</td>
+            <td>张三</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div class="footer">
+        <input type="button" class="btn" value="保存"/>
+            <ul>
+                <li><a href="#" class="page pre"></a></li>
+                <li><a href="#"  class="page ">1</a></li>
+                <li><a href="#"  class="page ">2</a></li>
+                <li><a href="#"  class="page ">3</a></li>
+                <li><a href="#" class="page next"></a></li>
+            </ul>
+        </div>
+
+</div>
+</div>
+</body>
+</html>

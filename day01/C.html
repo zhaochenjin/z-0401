@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>html课程</title>
+    <style type="text/css">
+        th,td{
+            background-color: royalblue;
+            color:white;
+            border:none;
+            border-bottom:1px dashed red;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+    DIV：块状，描述一个区域或者章节
+-->
+
+<div style="border:2px solid red;width:100%">
+    <div style="width:100%; height:60px;background-color:green ;">
+        <h2><span style="color: red;">天软信息管理系统</span></h2>
+    </div>
+    <div style="width:200px;height:500px;background-color: blue;float:left;">
+        <ul style="list-style-type: decimal;">
+            <li style="list-style-image: url(../img/icon5.png);"><a href="">用户管理</a></li>
+            <li><a href="">员工管理</a></li>
+        </ul>
+    </div>
+    <div>
+        <p>用户管理</p>
+        <label for="username">用户名：</label><input name="username" /><input type="button" value="搜索" /><br />
+        <hr style="width:1000px;" />
+        <table style="background-color:aquamarine" border="1" cellspacing="2" cellpadding="5">
+            <tr>
+                <th>用户姓名</th>
+                <th>用户年龄</th>
+                <th>用户性别</th>
+            </tr>
+            <tr>
+                <td>张三</td>
+                <td>20</td>
+                <td>男</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>20</td>
+                <td>男</td>
+            </tr>
+            <tr>
+                <td>王五</td>
+                <td>20</td>
+                <td>男</td>
+            </tr>
+        </table>
+        <img src="http://pic2.ooopic.com/12/09/28/20bOOOPIC1e_1024.jpg" alt="图片加载失败显示的文字" width="100px"/>
+
+        <ol>
+            <li>2</li>
+            <li>1</li>
+            <li>8</li>
+        </ol>
+
+        <dl>
+            <dt>饺子</dt>
+            <dd>中国最受欢迎的美食，<span>新春佳节</span>必备！</dd>
+            <dd>中国最受欢迎的美食，<span>新春佳节</span>必备！</dd>
+            <dd>中国最受欢迎的美食，<span>新春佳节</span>必备！</dd>
+            <dt>包子</dt>
+            <dd>你没看错，那些大清早急急忙忙赶公交车的，手里都拎着包子。。</dd>
+            <dd>你没看错，那些大清早急急忙忙赶公交车的，手里都拎着包子。。</dd>
+            <dd>你没看错，那些大清早急急忙忙赶公交车的，手里都拎着包子。。</dd>
+        </dl>
+
+
+    </div>
+</div>
+
+</body>
+</html>

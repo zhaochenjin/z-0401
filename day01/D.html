@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>表单元素</title>
+</head>
+<body>
+<form action="c.html" method="get">
+    <table >
+        <tr>
+            <td align="right"><label for="error">显示错误的地方：</label></td>
+            <td><input id="error" name="error" type="hidden" /></td>
+        </tr>
+        <tr>
+            <td align="right"><label for="username">用户名：</label></td>
+            <td><input id="username" name="username" type="text" width="100px" /></td>
+        </tr>
+        <tr>
+            <td align="right"><label for="password">密码：</label></td>
+            <td><input id="password" name="password" type="password" width="100px" /></td>
+        </tr>
+        <tr>
+            <td align="right"><label for="hobb">爱好：</label></td>
+            <td>
+                <input type="checkbox" id="hobb" name="hobb" value="1" /> 王者荣耀
+                <input type="checkbox" name="hobb" value="2" /> 吃鸡
+                <input type="checkbox" name="hobb" value="3" /> 打篮球
+                <input type="checkbox" name="hobb" value="4" /> 看电影
+            </td>
+        </tr>
+        <!--
+            checkbox 一定要加组 name
+        -->
+        <tr>
+            <td align="right"><label>性别：</label></td>
+            <td>
+                <input type="radio" name="sex" value="1" /> 男
+                <input type="radio" name="sex" value="2" /> 女
+                <input type="radio" name="sex" value="1" /> 男男
+                <input type="radio" name="sex" value="2" /> 女女
+            </td>
+        </tr>
+        <tr>
+            <td align="right"><label>头像上传：</label></td>
+            <td><input type="file"  /></td>
+        </tr>
+        <tr>
+            <td align="right"><label>个人简介：</label></td>
+            <td>
+                <textarea cols="100" rows="10"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td align="right"><label>选择老师：</label></td>
+            <td>
+                <select value="2" >
+                    <option value="1">张老师</option>
+                    <option value="2" selected="selected">王老师</option>
+                    <option value="3">李老师</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="button" value="按钮" />
+                <input type="reset" value="重置" />
+                <input type="submit" value="提交" />
+                <input type="image" src="../img/icon4.png"  value="按钮" />
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

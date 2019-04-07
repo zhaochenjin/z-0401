@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>day02选择符</title>
+    <style type="text/css">
+        *{
+            color:red;
+        }
+        /* 全体选择符  */
+
+        a{
+            color:blue;
+        }
+        /*元素选择符*/
+
+        .aColor {
+            color:greenyellow;
+        }
+        /*类选择符  */
+
+        #aId {
+            color:gold;
+        }
+        /*id选择符  */
+
+        #aId:hover {
+            color:aquamarine;
+        }
+        /* 伪类选择符  点到那个位置就变青色 */
+
+        #aId:active{
+            color:darkolivegreen;
+        }
+        /* 伪类选择符  选中（长摁） */
+
+        #aId:link {
+            color:plum;
+        } /* 未访问的链接 */
+
+        #aId:visited {
+            color:pink;
+        } /* 已访问的链接 */
+
+        /**
+         * 类选择符： 定义时候需要加上点 ，引用的时候（调用的时候）不能够加点
+         *
+         */
+
+        .p{
+            color:darkgray;
+        }
+        /*类选择符 */
+
+        .p div{
+            color:black;
+        }
+        /* 后代选择符  */
+
+        div+p{
+            color:peru;
+        }
+        /* 相邻兄弟选择符  div后第一个p */
+
+        .p .ss{
+            color:darkorange;
+        }
+        /* 类选择符里面的类选择符  */
+
+    </style>
+</head>
+<!--
+
+-->
+<body>
+<a id="aId" class="aColor" href="#">跳转到a.html</a>
+
+<div class="p">
+    dddddddddddddddd
+    <div class="s">
+        eeeeeeeeeeeeeee
+        <div class="ss">dfsfdsfdsfds</div>
+    </div>
+    <p>fffffffffffff</p>
+    <p>gggggggggg</p>
+</div>
+</body>
+</html>

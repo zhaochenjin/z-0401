@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>元素的层叠顺序</title>
+    <style type="text/css">
+        div{
+            width:60px;
+            height:100px;
+            border: 1px solid #ADFF2F;
+
+            position: absolute;
+            top:50px;
+            left:0;
+            color:white;
+        }
+
+        .A{
+            z-index: -1; /*  负数 在后面 正数在前面*/
+            top:20px;
+        }
+    </style>
+</head>
+<body>
+<div class="A" style="background-color: #000000;">A</div>
+<div style="margin-left:30px;background-color: #FF0000;">2</div>
+<div style="margin-left:60px;background-color: #FF8C00">3</div>
+<div style="margin-left:90px;background-color: #4169E1;">4</div>
+</body>
+</html>

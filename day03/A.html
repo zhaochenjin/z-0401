@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格</title>
+    <style type="text/css">
+        table{
+            width:10px;
+            /*border-top:1px solid #000000;
+            border-left:1px solid #000000;*/
+
+            table-layout: auto;
+            /* table-layout  auto 默认。列宽度由单元格内容设定,宽度似乎不起作用。 fixed 列宽由表格宽度和列宽度设定。 inherit 规定应该从父元素继承 table-layout 属性的值。 */
+
+            border-collapse:separate;
+            /* collapse 边框为零，separate,默认值，边框会被分开。border合并还是独立 产生的效果类似 cellspacing="0" */
+            /*border-spacing: 50px;*/
+            /* 类似于单元格内容到表格边框的一个空白  cellpadding */
+
+            caption-side: top;
+            /*caption-side  top默认值 把表格标题定位在表格之上。bottom 把表格标题定位在表格之下。 */
+
+            empty-cells: hide;
+            /*empty-cells  hide 不在空单元格周围绘制边框。
+            show在空单元格周围绘制边框。默认。 */
+        }
+
+        td,th {
+            /*border-right: 1px solid #000000;
+            border-bottom: 1px solid #000000;*/
+            text-align: center; /* 字体居中 */
+            overflow: hidden;
+        /*    overflow  visible默认值。内容不会被修剪，会呈现在元素框之外。
+                hidden 内容会被修剪，并且其余内容是不可见的。 需要设置 table-layout: fixed;和宽度
+                scroll 内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容。
+                auto 如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。
+                inherit 规定应该从父元素继承 overflow 属性的值。
+*/
+           }
+    </style>
+</head>
+<body>
+<table border="1" >
+    <caption>2019年统计表</caption>
+    <thead>
+        <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>生日</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>张三DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDA</td>
+        <td>21EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEA</td>
+        <td>1998</td>
+    </tr>
+    <tr>
+        <td>张三</td>
+        <td>21</td>
+        <td>1998</td>
+    </tr>
+    <tr>
+        <td>张三</td>
+        <td>21</td>
+        <td>1998</td>
+    </tr>
+    <tr>
+        <td>张三</td>
+        <td>21</td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

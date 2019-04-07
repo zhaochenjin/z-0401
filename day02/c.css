@@ -1,0 +1,48 @@
+#aId {
+    color:gold;
+}
+
+a{
+    color:blue;
+}
+
+*{
+    color:red;
+}
+
+.aColor {
+    color:greenyellow;
+
+}
+
+#aId:hover {
+    color:aquamarine;
+}
+
+#aId:active{
+    color:darkolivegreen;
+}
+
+/**
+ * 类选择符： 定义时候需要加上点 ，引用的时候（调用的时候）不能够加点
+ *
+ */
+
+.p{
+    color:darkgray;
+}
+
+
+.p .ss{
+    color:darkorange;
+}
+
+.p div{
+    color:#DCFF00;
+    /**
+     *  FF : 15 * 16 + 15 = 240 + 15 = 255
+     *   15 = 1* 10 + 5
+     *  rgb(220,255,255)
+     *  220/16 = 13 160+48 = 208  12
+     */
+}

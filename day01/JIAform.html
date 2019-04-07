@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form page</title>
+</head>
+<body>
+<form action="">
+    <input type="text" name="username" placeholder="Username" size="6" maxlength="6"><br> <!-- placeholder该提示会在输入字段为空时显示，并会在字段获得焦点时消失。 -->
+    <input type="text" name="nickname" value="Tom" readonly="readonly"><br> <!--把输入字段Tom设为只读 -->
+    <input type="password" name="password" placeholder="Password"><br>
+    <input type="radio" name="gender" value="male" checked="checked"> Male <!-- 把male设为默认 -->
+    <input type="radio" name="gender" value="female"> Female
+    <br>
+    <input type="checkbox" name="hobbies" value="Game" disabled="disabled"> Game <!-- disabled="disabled" 不能选 -->
+    <input type="checkbox" name="hobbies" value="Movie"> Movie
+    <input type="checkbox" name="hobbies" value="Reading"> Reading
+    <br>
+    <select name="city" multiple="multiple">  <!-- multiple 属性规定输入字段可选择多个值。-->
+        <option value="Beijing">Beijing</option>
+        <option value="Shanghai" selected="selected">Shanghai</option> <!--select 最开始打开就是选中Shanghai -->
+        <option value="Guangzhou">Guangzhou</option>
+    </select>
+    <br>
+    <input type="date" name="dob">
+    <br>
+    <input type="color" name="color">
+    <br>
+    <textarea name="introduce" cols="30" rows="3"></textarea>
+    <br>
+    <input type="submit" value="Sign up">
+    <!--<button>test</button>-->
+</form>
+</body>
+</html>
